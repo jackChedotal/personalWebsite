@@ -4,77 +4,90 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" href="css/normalize.css" type="text/css">
 <link rel="stylesheet" href="css/main.css" type="text/css">
-<title>Jack Chedotal - Portfolio</title>
+
 
 </head>
 <body>
-	<div id="navWrap" id="top">
+	<div id="navWrap">
 		<nav>
 			<span id="navBtn"><img src="img/burgerMenu.svg"></span>
 			<ul id="navMenu">
 				<li><a href="#top">Home</a></li>
-				<li><a href="#contactCol">Contact</a></li>
-				<li><a href="#leftCol">About</a></li>
-				<li><a href="#projects">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
 			</ul>
-		</nav>
-	</div> <!-- End of navWrap-->
+		</nav><!-- end of nav -->
+	</div> <!-- end of navWrap -->
 	<div id="headerWrap">
 		<header>
-		</header>
+		</header> <!-- end of header-->
 	</div> <!-- End of header-->
 	<div id="wrapper">
-		<div id="leftCol">
-			<h3>Jack Chedotal</h3>
-				<p>Computers and software are evolving at a very fast pace ultimately changing our working and social environments. I gained an interest in web development when I was 16 in high school and have been improving my knowledge ever since through college and private study. College has provided me with the knowledge of a range of subjects such as how we interact with computers and systems analysis and design. Hobbies of mine include running which has a lot of dedication involved participating in fun runs raising money for charity in the past.  </p>
-				<p>I hope to achieve a junior position at a web development company where I can develop my skills.</p>
-		</div>
-		<div id="rightCol">
-			<img src="img/me.jpg" alt="test">
-			<p>Halfway up Mt.Snowdon</p>
-		</div>
+		<section class="column50" id="about">
+			<header>
+				<h3>Jack Chedotal</h3>
+			</header>
+				<p>Computers and software are evolving at a very fast pace ultimately changing our working and social environments. I gained an interest in web development when I was 16 in high school and have been improving my knowledge ever since through college and private study. College has provided me with the knowledge of a range of subjects such as how we interact with computers and systems analysis and design. Hobbies of mine include running which has a lot of dedication involved, whilst participating in fun runs raising money for charity. </p>
+				<p>I hope to achieve a junior position at a web development company where I can further develop my skills, where I can become an asset for a company.</p>
+		</section>
+		<aside class="column50">
+			<figure>
+				<img src="img/me.jpg" alt="test">
+				<figcaption><p>Halfway up Mt.Snowdon</p></figcaption>
+			</figure>
+		</aside>
 		<div class="clear"></div>
-		<h2>Skills</h2>
-			<ul>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>JavaScript</li>
-				<li>Basic PHP</li>
-				<li>Mysql / Database design</li>
-			</ul>
-		<h2 id="projects">Projects</h2>
-			<div class="projects">
-				<h3>College Microsite</h3>
-					<img src="img/website1.jpg"> 
-					<p> This website was made for a college assignment, for the purpose of showing what I have learned in lesson. I had a brief from a 'client' which I then had to design and produce a website for them. SA Historic Tours requested having a way to showcase their tours that they provide and also a way for people to book one. 
-					It was made using the 960 box method that was taught in class. The booking form was done using javaScript, this provided a way for me to work out the total cost of the tour. Although on a live website this would be insecure, this was the only way to provide that requirement due to not knowing a server side language at the time.</p>
-			</div>
-		<h2>Get in touch</h2>
-			<div id="contactMessage">
-				<form action="mailto:jackchedotal@outlook.com" method="post" enctype="text/plain" name="contactForm">
+		<section>
+			<header>
+				<h2>Skills</h2>
+			</header>	
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JavaScript</li>
+					<li>Basic PHP</li>
+					<li>Mysql / Database design</li>
+				</ul>
+		</section>
+		<section id="portfolio">
+			<header>
+				<h2>Projects</h2>
+			</header>	
+				<div class="projects">
+					<h3>College Microsite</h3>
+						<img src="img/collegeWebsite.jpg"> 
+						<p> This website was made for a college assignment, for the purpose of showing what I have learned in lesson. I had a brief from a 'client' which I then had to design and produce a website for them. SA Historic Tours requested having a way to showcase their tours that they provide and also a way for people to book one. 
+						It was made using the 960 box method that was taught in class. The booking form was done using javaScript, this provided a way for me to work out the total cost of the tour. Although on a live website this would be insecure, this was the only way to provide that requirement due to not knowing a server side language at the time.</p>
+				</div>
+		</section>
+		<section id="contact">
+			<header>
+				<h2>Get in touch</h2>
+			</header>	
+				<form id="contactMessage" action="mailto:jackchedotal@outlook.com" method="post" enctype="text/plain" name="contactForm">
 					<ul>
-						<li> <label for="name">Name</label> </li>
+						<li> <label for="name">Name:</label> </li>
 						<li> <input type="text" name="name" /> </li>
-						<li> <label for="email">Email</label> </li>
+						<li> <label for="email">Email:</label> </li>
 						<li> <input type="text" name="email" /> </li>
-						<li> <label for="message">Message</label> </li>
+						<li> <label for="message">Message:</label> </li>
 						<li> <textarea name="message" rows="6" ></textarea> </li>
 						<li> <button class="submit" type="submit">Submit Form</button> </li>
 					</ul>
 				</form>
-			</div>
-			<div id="contactCol">
+			<aside id="contactCol">
 				<h3> Contact Details / Social Media</h3>
 					<p>You can also find me on:</p>
 					<ul>
 						<li><span class="bold"> Email: </span>jackchedotal@outlook.com </li>
 						<li><span class="bold"> Twitter: </span><a href="https://twitter.com/JackChedotal">@JackChedotal</a> </li>
-						<li><span class="bold"> Git </span>jackchedotal@outlook.com </li>
+						<li><span class="bold"> Git: </span><a href="https://github.com/jackChedotal">Link</a> </li>
 					</ul>
-			</div>
+			</aside>
+		</section>
 		<div class="clear"></div>
-	</div> <!-- End of wrapper-->
-	
+	</div> <!-- end of wrapper -->
 	<div id="footerWrap">
 		<footer>
 			<div class="leftAlign">
@@ -82,10 +95,10 @@
 				<img src="img/socialIcons/twitter.jpg">
 				<img src="img/socialIcons/facebook.jpg">
 			</div>
-				<p> Copyright 2014 &copy Jack Chedotal. <a href="#top">Go to the top &#x25B2;</a></p>
+				<p> Copyright 2014-2015 &copy Jack Chedotal.</p>
 		<div class="clear"></div>
-		</footer>
-	</div>
+		</footer> <!-- end of footer -->
+	</div> <!-- end of footerWrap -->
 	<script src='js/jquery-1.11.1.min.js'></script>
 	<script src='js/main.js'></script>
 </body>
